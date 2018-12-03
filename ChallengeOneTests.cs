@@ -29,7 +29,7 @@ namespace Challenges
         [Test]
         public void Test4()
         {
-            var input = System.IO.File.ReadAllLines(@"..\..\..\inputChallengeONe").Aggregate((one,  two ) => $"{one}{System.Environment.NewLine}{two}");
+            var input = System.IO.File.ReadAllLines(@"..\..\..\inputChallengeOne").Aggregate((one,  two ) => $"{one}{System.Environment.NewLine}{two}");
             Assert.AreEqual(input.ParseList().Frequency(), 590);
         }
     }

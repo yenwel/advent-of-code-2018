@@ -36,7 +36,7 @@ namespace Challenges
         [Test]
         public void Test5()
         {
-            var input = System.IO.File.ReadAllLines(@"..\..\..\inputChallengeONe").Aggregate((one,  two ) => $"{one}{System.Environment.NewLine}{two}");
+            var input = System.IO.File.ReadAllLines(@"..\..\..\inputChallengeOne").Aggregate((one,  two ) => $"{one}{System.Environment.NewLine}{two}");
             Assert.AreEqual(input.ParseList().FrequencyRepeatedFirst(), 83445);
         }
     }
